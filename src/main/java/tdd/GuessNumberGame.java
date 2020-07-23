@@ -5,11 +5,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 public class GuessNumberGame {
-    public String guess(String guessNumber){
-        String rightNumber = "";
-        String answer = "3189";
-
+    public String guess(String guessNumber,String answer){
+        String rightOutput = "";
         int countA=0, countB=0;
+        int guessIndex,answerIndex;
 
         ArrayList<Character> answerList = new ArrayList<>();
         ArrayList<Character> guessList = new ArrayList<>();
@@ -19,8 +18,6 @@ public class GuessNumberGame {
             answerList.add(answer.charAt(i));
         }
 
-        boolean flag = true;
-        int guessIndex,answerIndex;
         for(int i=0; i<guessNumber.length(); i++){
             if(answerList.contains(guessList.get(i))){
                 guessIndex = guessList.indexOf(guessList.get(i));
@@ -33,17 +30,8 @@ public class GuessNumberGame {
                 }
             }
         }
-
-
-
-        for(int i=0; i<guessNumber.length(); i++){
-            if(guessNumber.charAt(i) == (answer.charAt(i))){
-                rightNumber = "4A0B";
-            }
-        }
-//        System.out.println(countA);
-//        System.out.println(countB);
-        return rightNumber;
+        rightOutput = countA + "A" + countB + "B";
+        return rightOutput;
     }
 
     public String verifyGuessNumber(String guessNumber){
