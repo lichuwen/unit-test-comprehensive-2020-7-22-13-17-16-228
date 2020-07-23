@@ -79,4 +79,19 @@ public class GuessNumberGameTest {
 
     }
 
+    @Test
+    void should_return_1A1B_when_guess_1563_given_input_1234(){
+        //given
+        String answer = "1234";
+        String guessNumber = "1563";
+        GuessNumberGame guessNumberGame = new GuessNumberGame(answer);
+
+        //when
+        String actual = guessNumberGame.guess(guessNumber);
+
+        //then
+        assertEquals("1A1B",actual);
+
+    }
+
 }
