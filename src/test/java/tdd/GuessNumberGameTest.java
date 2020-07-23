@@ -11,7 +11,7 @@ public class GuessNumberGameTest {
         GuessNumberGame guessNumberGame = new GuessNumberGame();
 
         //when
-        String actual = guessNumberGame.guess();
+        String actual = guessNumberGame.guess(guessNumber);
 
         //then
         assertEquals("4A0B",actual);
