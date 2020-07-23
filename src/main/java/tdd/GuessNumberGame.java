@@ -45,7 +45,7 @@ public class GuessNumberGame {
             randomGuess.add(guessNumber.charAt(i));
         }
         if(randomGuess.size()<4){
-            input = "Wrong Input，Input again";
+            input = "Wrong Input,Input again";
         }
         return input;
     }
