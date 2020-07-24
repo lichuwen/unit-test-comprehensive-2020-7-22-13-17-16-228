@@ -1,5 +1,6 @@
 package tdd;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -50,4 +51,7 @@ public class GuessNumberGame {
         return input;
     }
 
+//    public String gameProcess(){
+//
+//    }
 }

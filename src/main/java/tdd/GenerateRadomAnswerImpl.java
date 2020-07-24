@@ -3,9 +3,9 @@ package tdd;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class GenerateRadomGuessImpl implements GenerateRadomGuess{
+public class GenerateRadomAnswerImpl implements GenerateRadomAnswer {
     @Override
-    public String generateRadomNumber() {
+    public String generateRadomAnswer() {
         String str = "0123456789";
         HashSet<Character> randomGuess = new HashSet<Character>();
         for (int i = 0; randomGuess.size() < 4; i++) {
