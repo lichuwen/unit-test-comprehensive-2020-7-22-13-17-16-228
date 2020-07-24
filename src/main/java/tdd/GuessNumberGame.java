@@ -12,7 +12,7 @@ public class GuessNumberGame {
         this.answer = answer;
     }
 
-    public String guess(String guessNumber) {
+    String guess(String guessNumber) {
         String rightOutput = "";
         int countA = 0, countB = 0;
         int guessIndex, answerIndex;

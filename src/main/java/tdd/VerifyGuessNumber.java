@@ -3,7 +3,7 @@ package tdd;
 import java.util.HashSet;
 
 public class VerifyGuessNumber {
-    public String verifyGuessNumber(String guessNumber) {
+    String verifyGuessNumber(String guessNumber) {
         String input = "";
         HashSet<Character> randomGuess = new HashSet<Character>();
         for (int i = 0; i < guessNumber.length(); i++) {

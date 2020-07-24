@@ -95,34 +95,4 @@ public class GuessNumberGameTest {
 
     }
 
-    @Test
-    void should_return_wrong_message_when_guess_1234_given_input_12(){
-        //given
-        String answer = "1234";
-        String guessNumber = "12";
-        GuessNumberGame guessNumberGame = new GuessNumberGame(answer);
-
-        //when
-        String actual = guessNumberGame.verifyGuessNumber(guessNumber);
-
-        //then
-        Assertions.assertEquals("Wrong Input,Input again", actual);
-
-    }
-
-    @Test
-    void should_return_wrong_message_when_guess_1234_given_input_1223(){
-        //given
-        String answer = "1234";
-        String guessNumber = "1223";
-        GuessNumberGame guessNumberGame = new GuessNumberGame(answer);
-
-        //when
-        String actual = guessNumberGame.verifyGuessNumber(guessNumber);
-
-        //then
-        Assertions.assertEquals("Wrong Input,Input again", actual);
-
-    }
-
 }
