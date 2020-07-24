@@ -51,7 +51,10 @@ public class GuessNumberGame {
         return input;
     }
 
-//    public String gameProcess(){
-//
-//    }
+    public void gameProcess() throws IOException {
+        InputGuessNumberImpl inputGuessNumber = new InputGuessNumberImpl();
+        for(int i=0; i<6; i++){
+            inputGuessNumber.getGuessNumber();
+        }
+    }
 }
