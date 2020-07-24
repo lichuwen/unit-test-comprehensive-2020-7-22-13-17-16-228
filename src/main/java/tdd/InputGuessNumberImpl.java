@@ -16,4 +16,11 @@ public class InputGuessNumberImpl implements InputGuessNumber{
         }
         return guessNumber;
     }
+
+    @Override
+    public void gameProcess() throws IOException {
+        for(int i=0; i<6; i++){
+            this.getGuessNumber();
+        }
+    }
 }
