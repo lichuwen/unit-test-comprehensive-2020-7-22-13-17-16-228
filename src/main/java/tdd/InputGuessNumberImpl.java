@@ -11,8 +11,8 @@ public class InputGuessNumberImpl implements InputGuessNumber{
         String inputNumber = stdin.readLine();
         String[] guessNumbers = inputNumber.split(" ");
         StringBuilder guessNumber = new StringBuilder();
-        for(String s:guessNumbers){
-            guessNumber.append(s);
+        for(String number:guessNumbers){
+            guessNumber.append(number);
         }
         return guessNumber.toString();
     }
