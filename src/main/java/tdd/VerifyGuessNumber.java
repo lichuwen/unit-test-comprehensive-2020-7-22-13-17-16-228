@@ -5,9 +5,9 @@ import java.util.HashSet;
 public class VerifyGuessNumber {
     String verifyGuessNumber(String guessNumber) {
         String input = "";
-        HashSet<Character> randomGuess = new HashSet<Character>();
-        for (int i = 0; i < guessNumber.length(); i++) {
-            randomGuess.add(guessNumber.charAt(i));
+        HashSet<Character> randomGuess = new HashSet<>();
+        for (int num = 0; num < guessNumber.length(); num++) {
+            randomGuess.add(guessNumber.charAt(num));
         }
         if (randomGuess.size() < 4) {
             input = "Wrong Input,Input again";
