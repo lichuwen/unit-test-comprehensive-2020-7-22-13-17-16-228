@@ -10,10 +10,10 @@ public class InputGuessNumberImpl implements InputGuessNumber{
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
         String inputNumber = stdin.readLine();
         String[] guessNumbers = inputNumber.split(" ");
-        String guessNumber = "";
+        StringBuilder guessNumber = new StringBuilder();
         for(String s:guessNumbers){
-            guessNumber += s;
+            guessNumber.append(s);
         }
-        return guessNumber;
+        return guessNumber.toString();
     }
 }
