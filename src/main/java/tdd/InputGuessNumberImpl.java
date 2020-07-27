@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class InputGuessNumberImpl implements InputGuessNumber{
     @Override
-    public String getGuessNumber() throws IOException {
+    public void getGuessNumber() throws IOException {
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
         String inputNumber = stdin.readLine();
         String guessNumbers[] = inputNumber.split(" ");
@@ -14,7 +14,6 @@ public class InputGuessNumberImpl implements InputGuessNumber{
         for(String s:guessNumbers){
             guessNumber += s;
         }
-        return guessNumber;
     }
 
     @Override
