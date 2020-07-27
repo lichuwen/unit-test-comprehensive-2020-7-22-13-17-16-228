@@ -14,7 +14,7 @@ public class GuessNumberGame {
 
     String guess(String guessNumber) {
         String rightOutput = "";
-        int countA = 0, countB = 0;
+        int countRightNumberAndPosition = 0, countRightNumber = 0;
         int guessIndex, answerIndex;
 
         ArrayList<Character> answerList = new ArrayList<>();
@@ -30,13 +30,13 @@ public class GuessNumberGame {
                 guessIndex = guessList.indexOf(guessList.get(i));
                 answerIndex = answerList.indexOf(guessList.get(i));
                 if (guessIndex == answerIndex) {
-                    countA++;
+                    countRightNumberAndPosition++;
                 } else {
-                    countB++;
+                    countRightNumber++;
                 }
             }
         }
-        rightOutput = countA + "A" + countB + "B";
+        rightOutput = countRightNumberAndPosition + "A" + countRightNumber + "B";
         return rightOutput;
     }
 }
