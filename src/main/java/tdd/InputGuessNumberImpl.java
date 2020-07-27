@@ -15,11 +15,4 @@ public class InputGuessNumberImpl implements InputGuessNumber{
             guessNumber += s;
         }
     }
-
-    @Override
-    public void gameProcess() throws IOException {
-        for(int i=0; i<6; i++){
-            this.getGuessNumber();
-        }
-    }
 }
