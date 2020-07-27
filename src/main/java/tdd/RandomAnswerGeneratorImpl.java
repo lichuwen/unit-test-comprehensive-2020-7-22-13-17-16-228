@@ -3,9 +3,9 @@ package tdd;
 import java.util.HashSet;
 
 // todo modify class name 16-19
-public class RadomAnswerGeneratorImpl implements RadomAnswerGenerator {
+public class RandomAnswerGeneratorImpl implements RandomAnswerGenerator {
     @Override
-    public String generateRadomAnswer() {
+    public String generateRandomAnswer() {
         String str = "0123456789";
         HashSet<Character> randomGuess = new HashSet<Character>();
         for (int i = 0; randomGuess.size() < 4; i++) {
