@@ -10,10 +10,10 @@ public class RandomAnswerGeneratorImpl implements RandomAnswerGenerator {
         for (int i = 0; randomGuess.size() < 4; i++) {
             randomGuess.add(str.charAt((int) (Math.random() * 9)));
         }
-        String randomNum = "";
+        StringBuilder randomNum = new StringBuilder();
         for (Character num:randomGuess){
-            randomNum += num;
+            randomNum.append(num);
         }
-        return randomNum;
+        return randomNum.toString();
     }
 }
